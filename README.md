@@ -15,17 +15,20 @@ How to use
 
 step 1.  创建实例：
 ```
-	var slider = new Slider(dom, className);```
+	var slider = new Slider(dom, className);
+```
 
 dom是包裹滚动条的父元素$('.parent')，className='slide'
 
 step 2. 创建动作:
 ```
-slider.execute('up',{arr:[1,2,3]});```
+slider.execute('up',{arr:[1,2,3]}, delay);
+```
 
 ```
-slider.execute('down',{arr:[1,2,3]});```
+slider.execute('down',{arr:[1,2,3]}, delay);
+```
 
 
 
-tenCats: 2015-09-28
+> tenCats: 2015-09-28

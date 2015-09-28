@@ -1,3 +1,4 @@
+// Copyright (c) 2015 Copyright Holder All Rights Reserved.
 
 function $ (s) {
 	return document.querySelector(s);
@@ -87,7 +88,7 @@ slider.prototype.up = function (opt) {
 		};
 	}
 
-	self.dom.slides = [].slice.call(root.children);
+	self.dom.slides = [].slice.call(self.dom.root.children);
 	arr_l_temp > 0 && setTimeout(__slide,0);
 
 	function __slide () {
@@ -138,7 +139,7 @@ slider.prototype.down = function (opt) {
 		};
 	}
 
-	self.dom.slides = [].slice.call(root.children);
+	self.dom.slides = [].slice.call(self.dom.root.children);
 	arr_l_temp > 0 && setTimeout(__slide,0);
 
 	function __slide () {

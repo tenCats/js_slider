@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="demo.css"/>
+
+<div id="clock-slide">
+  <div class="slide slide-1 hide">01</div>
+  <div class="slide slide-2">02</div>
+  <div class="slide slide-3 hide">03</div>
+</div>
+
+<script src="slider.js"></script>
+<script>
+var dom = $('#clock-slide'),
+	slider = new slider(dom, 'slide');
+
+slider.execute('up', {arr:['04', '05', '06', '07']}, 2);
+
+slider.execute('down', {arr:['04', '03', '02', '01']});
+
+</script>

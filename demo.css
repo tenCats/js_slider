@@ -1,0 +1,33 @@
+#clock-slide {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: gray;
+  border: 1px dashed gray;
+  background-color: lightblue;
+  margin: -10px;
+
+}
+  #clock-slide .slide {
+    position: absolute;
+    right: 0px;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s; }
+  #clock-slide .slide-0 {
+    -webkit-transform: translateY(-40px) rotateX(90deg);
+    opacity: 0; }
+  #clock-slide .slide-1 {
+    -webkit-transform: translateY(-20px) rotateX(45deg);
+    opacity: 0.25; }
+  #clock-slide .slide-2 {
+    -webkit-transform: translateY(0px) rotateX(0deg); }
+  #clock-slide .slide-3 {
+    -webkit-transform: translateY(20px) rotateX(-45deg);
+    opacity: 0.25; }
+  #clock-slide .slide-4 {
+    -webkit-transform: translateY(40px) rotateX(-90deg);
+    opacity: 0; }
+  #clock-slide .hide {
+    opacity: 0; }
